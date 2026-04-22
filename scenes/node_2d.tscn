@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://c24b3i6galyv7"]
 
+[ext_resource type="Script" uid="uid://bi0fccg1epe6h" path="res://scripts/fps.gd" id="1_4dvvg"]
+[ext_resource type="PackedScene" uid="uid://b5xoj2v3j5ivp" path="res://scenes/hero.tscn" id="1_6e84v"]
+
 [node name="Node2D" type="Node2D" unique_id=2031137841]
+script = ExtResource("1_4dvvg")
+
+[node name="Sprite2D" parent="." unique_id=669337905 instance=ExtResource("1_6e84v")]
+position = Vector2(244, 217)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=686875285]
+position = Vector2(576, 323)
+
+[node name="Label" type="Label" parent="." unique_id=985515177]
+offset_right = 40.0
+offset_bottom = 23.0
